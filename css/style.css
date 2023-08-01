@@ -1,63 +1,70 @@
 /* Reset CSS */
 @font-face {
-    font-family: "Joe_College";
-    src: url(../fonts/Joe_College.ttf);
+  font-family: "Joe_College";
+  src: url(../fonts/Joe_College.ttf);
 }
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 html,
 body {
-	background: #0a1438;
+  background: #0a1438;
 }
+
 img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-	display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
 }
 
-.grid-wrapper{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    height: 100vh;
-    overflow: hidden;
+.grid-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
+
 .grid-wrapper img {
-	width: 33.3%;
-	object-fit: cover;
-}
-.grid-wrapper > div{
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
-}
-.logo{
-    position: absolute;
-    z-index: 1;
-    height: 350px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-60%);
+  width: 33.3%;
+  object-fit: cover;
 }
 
-.grid-wrapper::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgb(250,138,1);
-    background: radial-gradient(circle, rgba(250,138,1,1) 0%, rgba(242,76,0,1) 56%, rgba(227,34,0,1) 100%);
-    top: 0;
-    left: 0;
-    opacity: 0.4;
+.grid-wrapper>div {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }
-.play-btn{
-    padding: 5px 30px;
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  height: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.grid-wrapper::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(250, 138, 1);
+  background: radial-gradient(circle, rgba(250, 138, 1, 1) 0%, rgba(242, 76, 0, 1) 56%, rgba(227, 34, 0, 1) 100%);
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+
+.play-btn {
+  padding: 5px 30px;
 
 }
 
@@ -83,8 +90,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle, rgba(250,138,1,1) 0%, rgba(242,76,0,1) 56%, rgba(227,34,0,1) 100%);
+  background: radial-gradient(circle, rgba(250, 138, 1, 1) 0%, rgba(242, 76, 0, 1) 56%, rgba(227, 34, 0, 1) 100%);
 }
+
 .button-container-1 button {
   width: 101%;
   height: 100%;
@@ -98,30 +106,36 @@ img {
   cursor: pointer;
   -webkit-animation: ani2 0.4s steps(22) forwards;
   animation: ani2 0.4s steps(22) forwards;
-  
+
 }
+
 .button-container-1 button:hover {
   -webkit-animation: ani 0.4s steps(22) forwards;
   animation: ani 0.4s steps(22) forwards;
 }
-.button-container-1 button span{
-    font-size: 36px;
-    letter-spacing: 1px;
-    /* font-weight: 300;
-    font-weight: bold; */
-    font-family: "Joe_College";
+
+.button-container-1 button span {
+  font-size: 36px;
+  letter-spacing: 1px;
+  /* font-weight: 300;
+  font-weight: bold; */
+  font-family: "Joe_College";
 }
-.button-container-1 button span:nth-child(1){
-    color: #a40003;
+
+.button-container-1 button span:nth-child(1) {
+  color: #a40003;
 }
-.button-container-1 button span:nth-child(2){
-    color: #f19106;
+
+.button-container-1 button span:nth-child(2) {
+  color: #f19106;
 }
-.button-container-1 button span:nth-child(3){
-    color: #02a20e;
+
+.button-container-1 button span:nth-child(3) {
+  color: #02a20e;
 }
-.button-container-1 button span:nth-child(4){
-    color: #a3008f;
+
+.button-container-1 button span:nth-child(4) {
+  color: #a3008f;
 }
 
 .mas {
@@ -132,63 +146,74 @@ img {
   position: absolute;
   overflow: hidden;
 }
-.mas span{
-    font-weight: 300;
-    font-size: 36px;
-    font-weight: bold;
-    font-family: "Joe_College";
-    
+
+.mas span {
+  font-size: 36px;
+  font-family: "Joe_College";
+
 }
-.modal-content{
-    background: transparent;
+
+.modal-content {
+  background: transparent;
 }
-.modal-body{
-    background: #0a1438;
+
+.modal-body {
+  background: #0a1438;
 }
-.modal-header{
-    border: none;
+
+.modal-header {
+  border: none;
 }
-.modal-header .btn-close{
-    opacity: 1;
-    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
-    outline: none;
-    box-shadow: none;
+
+.modal-header .btn-close {
+  opacity: 1;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  outline: none;
+  box-shadow: none;
 }
+
 @-webkit-keyframes ani {
   from {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
   }
+
   to {
     -webkit-mask-position: 100% 0;
     mask-position: 100% 0;
   }
 }
+
 @keyframes ani {
   from {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
   }
+
   to {
     -webkit-mask-position: 100% 0;
     mask-position: 100% 0;
   }
 }
+
 @-webkit-keyframes ani2 {
   from {
     -webkit-mask-position: 100% 0;
     mask-position: 100% 0;
   }
+
   to {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
   }
 }
+
 @keyframes ani2 {
   from {
     -webkit-mask-position: 100% 0;
     mask-position: 100% 0;
   }
+
   to {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
@@ -196,13 +221,14 @@ img {
 }
 
 
-@media(max-width:992px){
-    .grid-wrapper img{
-        width: 50%;
-    }
+@media(max-width:992px) {
+  .grid-wrapper img {
+    width: 50%;
+  }
 }
-@media(max-width:576px){
-    .grid-wrapper img{
-        width: 100%;
-    }
+
+@media(max-width:576px) {
+  .grid-wrapper img {
+    width: 100%;
+  }
 }
